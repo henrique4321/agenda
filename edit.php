@@ -8,7 +8,7 @@
       <input type="hidden" name="type" value="edit">
       <input type="hidden" name="id" value="<?= $contact['id'] ?>">
       <div class="form-group">
-        <label for="name">Nome do contato:</label>
+        <label for="name">Nome do Cachorro:</label>
         <input type="text" class="form-control" id="name" name="name" placeholder="Digite o nome" value="<?= $contact['name'] ?>" required>
       </div>
       <div class="form-group">

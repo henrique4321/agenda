@@ -5,13 +5,13 @@
     <?php if(isset($printMsg) && $printMsg != ''): ?>
       <p id="msg"><?= $printMsg ?></p>
     <?php endif; ?>
-    <h1 id="main-title">Minha Agenda</h1>
+    <h1 id="main-title">Minha Agenda Veterinária</h1>
     <?php if(count($contacts) > 0): ?>
       <table class="table" id="contacts-table">
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">Nome</th>
+            <th scope="col">Cachorro</th>
             <th scope="col">Telefone</th>
             <th scope="col"></th>
           </tr>
