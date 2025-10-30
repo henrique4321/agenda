@@ -3,25 +3,30 @@
 ?>
   <div class="container">
     <?php include_once("templates/backbtn.html"); ?>
-    <h1 id="main-title">Editar contato</h1>
+    <h1 id="main-title">Editar atendimento</h1>
     <form id="create-form" action="<?= $BASE_URL ?>config/process.php" method="POST">
       <input type="hidden" name="type" value="edit">
-      <input type="hidden" name="id" value="<?= $contact['id'] ?>">
+      <input type="hidden" name="id" value="<?= $atendimento['id'] ?>">
+
       <div class="form-group">
-        <label for="name">Nome do Cachorro:</label>
-        <input type="text" class="form-control" id="name" name="name" placeholder="Digite o nome" value="<?= $contact['name'] ?>" required>
+        <label for="cachorro">Nome do cachorro:</label>
+        <input type="text" class="form-control" id="cachorro" name="cachorro" placeholder="Digite o nome do cachorro" value="<?= $atendimento['cachorro'] ?>" required>
       </div>
+
       <div class="form-group">
-        <label for="phone">Telefone do contato:</label>
-        <input type="text" class="form-control" id="phone" name="phone" placeholder="Digite o telefone" value="<?= $contact['phone'] ?>" required>
+        <label for="contato">Telefone do contato:</label>
+        <input type="text" class="form-control" id="contato" name="contato" placeholder="Digite o telefone do dono" value="<?= $atendimento['contato'] ?>" required>
       </div>
+
       <div class="form-group">
-        <label for="observations">Observações:</label>
-        <textarea type="text" class="form-control" id="observations" name="observations" placeholder="Insira as observações" rows="3"><?= $contact['observations'] ?></textarea>
+        <label for="raca">Raça do animal:</label>
+        <input type="text" class="form-control" id="raca" name="raca" placeholder="Digite a raça do cachorro" value="<?= $atendimento['raca'] ?>" required>
       </div>
+
       <button type="submit" class="btn btn-primary">Atualizar</button>
     </form>
   </div>
 <?php
   include_once("templates/footer.php");
 ?>
+
